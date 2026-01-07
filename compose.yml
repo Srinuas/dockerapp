@@ -2,14 +2,12 @@
 version: "3"
 services:
  devopsdb:
-   container_name: devopsdb
    image: srinuas/myreponew:db
    ports:
      - "123:3306"
 
  application:
    image: srinuas/myreponew:ap
-   container_name: containerapp
    ports:
      - "345:8080"
    depends_on:
