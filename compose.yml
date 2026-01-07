@@ -4,11 +4,11 @@ services:
  devopsdb:
    image: srinuas/myreponew:db
    ports:
-     - "123:3306"
+     - "331:3306"
 
  application:
    image: srinuas/myreponew:ap
    ports:
-     - "124:8080"
+     - "332:8080"
    depends_on:
      - "devopsdb"
