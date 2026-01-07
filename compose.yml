@@ -3,14 +3,14 @@ version: "3"
 services:
  devopsdb:
    container_name: devopsdb
-   image: shaikmustafa/valluri:dbimage
+   image: srinuas/myreponew:db
    ports:
-     - "3306:3306"
+     - "123:3306"
 
  application:
-   image: shaikmustafa/valluri:appimage
+   image: srinuas/myreponew:ap
    container_name: containerapp
    ports:
-     - "1234:8080"
+     - "345:8080"
    depends_on:
      - "devopsdb"
